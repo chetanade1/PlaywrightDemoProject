@@ -23,6 +23,14 @@ test('Locators_built-in' ,async ({page}) =>
     console.log("Button is clicked");
     console.log("Button is visible");
 
+    //verify the presence of welcome message
+    //await page.waitForSelector('//h6[text()="Dashboard"]');
+    const msg = await page.locator('//div/p[text()="Time at Work"]').textContent();
+    await expect(await page.getByText(msg)).toBeVisible();
+    console.log(msg);
+
+    await expect(page.locator('//div/p[text()="Time at Work"]')).toBeVisible();
+    console.log("Welcome message is visible");
 
 
     //take a screenshot
