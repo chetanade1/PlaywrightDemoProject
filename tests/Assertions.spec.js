@@ -81,6 +81,8 @@ test('AssertionsTest',async ({page}) => {
 
     //to have count ---> Page Has Count
     const links = await page.$$('a');
+    await expect(links).toHaveLength(62);    
+    console.log("Links count is correct");
     
 
 
