@@ -8,6 +8,8 @@
 //7. toBeSelected
 //8. toHaveAttribute
 //9. toContainText
+//10. toHaveValue
+//11. toHaveCount
 
 
 
@@ -76,6 +78,9 @@ test('AssertionsTest',async ({page}) => {
     await firstNameValue.fill("tantan")
     await expect(firstNameValue).toHaveValue("tantan");
     console.log("First Name value is present");
+
+    //to have count ---> Page Has Count
+    const links = await page.$$('a');
     
 
 
