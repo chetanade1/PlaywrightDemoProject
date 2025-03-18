@@ -83,6 +83,9 @@ test('AssertionsTest',async ({page}) => {
     const links = await page.$$('a');
     await expect(links).toHaveLength(62);    
     console.log("Links count is correct");
+
+    //take a screenshot
+    await page.screenshot({path: 'D:\\PlaywrightAutomation\\Screenshot\\screenshot3.png'});
     
 
 
