@@ -36,7 +36,18 @@ test('Handle inputBox', async ({page}) => {
     const nameTextbox4 = await page.locator("//input[@id='name']");
     await expect(nameTextbox4).toBeEmpty;
     console.log("Textbox is empty");
+
+    //Enter e-mail address
+    const Email = await page.locator("//input[@placeholder='Enter EMail']");
+    await Email.fill("chetandae@gmail.com");
+    console.log("Email entered");
+
+    //Enter phone number
+    await page.locator("#phone").fill("1234567890");
+    console.log("Phone number entered");
     
+
+
 
 })
 
