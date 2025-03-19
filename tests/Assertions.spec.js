@@ -87,29 +87,6 @@ test('AssertionsTest',async ({page}) => {
     //take a screenshot
     await page.screenshot({path: 'D:\\PlaywrightAutomation\\Screenshot\\screenshot3.png'});
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //close the browser
     await page.close();
-
-
-
-
-
-
-
-
-
 });
