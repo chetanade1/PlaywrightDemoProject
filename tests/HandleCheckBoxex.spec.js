@@ -42,7 +42,7 @@ test('Handle CheckBoxes', async ({page}) => {
     }
 
     await page.waitForTimeout(5000);
-    
+
     //Unchecked
     for (const locator of checkboxLocators) 
         {   
@@ -52,8 +52,6 @@ test('Handle CheckBoxes', async ({page}) => {
             console.log("Checkbox Unchecked");
             }
         }
-
-
 
     await page.waitForTimeout(5000);
 
