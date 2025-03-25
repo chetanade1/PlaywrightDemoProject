@@ -45,10 +45,6 @@ test('Handle Radio Buttons', async ({page}) => {
     console.log("Radio button clicked");
 
 
-
-
-
-
     await page.waitForTimeout(5000);
 
     //close the browser
