@@ -26,9 +26,6 @@ test("Handle auto suggest dropdown", async ({page}) => {
     }
 
 
-
-
-
     //wait for some time
     await page.waitForTimeout(5000);
 
