@@ -43,6 +43,5 @@ test('handle drag and drop', async ({page}) => {
     await page.close();
     console.log("Browser closed");
 
-    //screenshot
-    await page.screenshot({path: 'D:\\PlaywrightAutomation\\Screenshot\\screenshot7.png'});
+    
 })
