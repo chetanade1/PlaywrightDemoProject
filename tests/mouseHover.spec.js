@@ -1,3 +1,11 @@
+/*
+mouseHover -
+This test script demonstrates how to handle mouse hover actions using Playwright.
+It opens a browser, navigates to a specific URL, performs mouse hover actions on elements, and clicks on a link.
+It also includes logging statements to indicate the progress of the test.
+*/
+
+
 const {test , expect} =require('@playwright/test')
 
 test("Handle mouse hover", async ({page}) => {
