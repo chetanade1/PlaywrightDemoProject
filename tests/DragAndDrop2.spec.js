@@ -6,6 +6,7 @@ test("Handle Drag and Drop", async ({page}) => {
     await page.goto("https://testautomationpractice.blogspot.com/");
     console.log("Browser opened");
 
+    
     //locator for drag and drop
     const sourceLoc = await page.locator("#draggable");
     const targetLoc = await page.locator("#droppable");
