@@ -12,7 +12,8 @@ test("test1", async ({page}) => {
     await logIn.clickOnLoginLink();
     await logIn.login("pavanol","test@123");
     await logIn.clickOnLoginBtn();
-
+    await page.waitForTimeout(3000);
+    
     //Homepage
     await home.addproductToCart("Samsung galaxy s6");
     await page.waitForTimeout(3000);
